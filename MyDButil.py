@@ -2,7 +2,10 @@ import json
 import pymysql
 from dbutils.pooled_db import PooledDB, SharedDBConnection
 from urllib.parse import urlparse
-
+'''
+数据库操作：
+为了保证隐私，每个账号被取出后直接在库中执行删除操作。
+'''
 class MysqlPool(object):
 
     def __init__(self, configFile):
