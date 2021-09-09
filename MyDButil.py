@@ -2,9 +2,7 @@ import json
 import pymysql
 from dbutils.pooled_db import PooledDB, SharedDBConnection
 from urllib.parse import urlparse
-'''
-数据库添加日志模块记录操作并定时清空
-'''
+
 class MysqlPool(object):
 
     def __init__(self, configFile):
